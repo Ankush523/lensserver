@@ -13,7 +13,7 @@ const pinataSecretApiKey =
   "546cd22c907dc06516dd9ace2e72549f5a3c650e6fe189227e90755420ce0f0d";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());
